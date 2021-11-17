@@ -1,24 +1,17 @@
-# README
+# rails-react - Ruby on Rails + React w/ TypeScript via Webpacker
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is a new Ruby on Rails project that adds support for React + TypeScript via [Webpacker](https://github.com/rails/webpacker).
 
-Things you may want to cover:
+This code accompanies the blog entry at: <https://firxworx.com/blog/coding/configuring-ruby-on-rails-to-support-react-typescript-with-webpacker/>
 
-* Ruby version
+Refer to `app/javascript/components` to find the `App.tsx` component. 
 
-* System dependencies
+The React entry point is `app/javascript/packs/hello_react.tsx` which is included via `javascript_pack_tag` in the `<head>..</head>` of the `app/views/layouts/application.html.erb` template.
 
-* Configuration
+To start the rails development server on <http://localhost:3000>, run:
 
-* Database creation
+```sh
+rails s
+```
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+For documentation on the webpack dev server and other webpack capabilities refer to: <https://github.com/rails/webpacker#development>.
